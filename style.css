@@ -109,7 +109,6 @@ header {
     align-items: center;
     flex-basis: 50%;
     overflow: hidden;
-    margin-right: 2rem;
     max-width: 700px;
     margin-top: 5rem;
 }
@@ -198,7 +197,9 @@ li .hiring {
     font-size: 36px;
   }
   .header-content {
-    margin: 2rem 1rem;
+    justify-content: center;
+    margin: 2rem 0rem;
+    padding: 0 1rem;
     margin-bottom: 0;
   }
   .header-text h1 {
