@@ -316,11 +316,12 @@ li .hiring {
   margin-top: 4rem;
 }
 .technology span {
+  display: flex;
+  flex-direction: column;
   padding: 2rem 1rem;
-  width: 370px;
-  height: 390px;
+  max-height: 420px;
   background: #FFFFFF;
-  border: 2px solid #0E0E7E;
+  border: 1px solid #0e0e7e8f;
   box-sizing: border-box;
   border-radius: 10px;
   margin-top: 4rem;
@@ -333,6 +334,9 @@ li .hiring {
   width: 36px;
   color: #fff;
   margin-bottom: 1rem;
+}
+.technology .small-ill img {
+  filter: invert(100%) sepia(60%) saturate(1%) hue-rotate(55deg) brightness(107%) contrast(101%);
 }
 .technology span h5 {
   font-family: 'Roboto Mono', monospace;
@@ -365,6 +369,7 @@ li .hiring {
 .technology span {
   width: 100%;
   max-width: 340px;
+  overflow: hidden;
 }
 }
 
@@ -649,35 +654,45 @@ footer {
 }
 .footer-logo-sm {
  display: flex;
+ justify-content: flex-start;
  flex-direction: column;
  min-width: 180px;
  margin-right: 5rem;
- margin-top: 1rem;
 }
 .footer-logo {
  display: flex;
  flex-direction: column;
-
 }
 .footer-logo img {
- width: 250px;
+ width: 150px;
 }
 .sm-handle {
  display: flex;
- justify-content: center;
+ flex-direction: column;
+ justify-content: flex-start;
  /* justify-content: space-between; */
  margin-top: 2rem;
  color: #00061B;
 }
+.sm-handle a {
+  display: flex;
+  color: #00061B;
+  margin-bottom: 1rem;
+}
+.sm-handle a:nth-child(4) {
+  margin-bottom: 0;
+}
 .sm-handle .iconify {
- font-size: 24px;
+ font-size: 20px;
  margin-right: 1rem;
 }
-
+.sm-handle p {
+  font-size: 15px;
+}
 .copyright {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin: 0 2rem;
   font-size: 16px;
   color: #00061B;
 }
@@ -685,17 +700,14 @@ footer {
  footer {
      flex-direction: column;
      text-align: center;
-     padding: 2rem;
+     padding: 2rem 1rem;
      padding-bottom: 0;
  }
  .footer-nav{
-     justify-content: left;
-     flex-direction: row;
-     margin-top: 2rem;
-     column-gap: 0;
- }
- .resources-nav {
-     margin-left: auto;
+   flex-direction: column;
+    justify-content: left;
+    margin-top: 2rem;
+    column-gap: 0;
  }
  .footer-about {
      text-align: left;
@@ -703,21 +715,29 @@ footer {
  .company-nav li, .resources-nav li {
      justify-content: flex-start;
      text-align: left;
+     align-items: flex-start;
  }
  .company-nav a, .resources-nav a {
      text-align: left;
+ }
+ .company-nav h6, .resources-nav h6 {
+  text-align: left;
  }
  .footer-about button {
      margin-top: 2rem;
  }
  .footer-logo {
      align-items: flex-start;
-     margin-top: 2rem;
+     margin-top: 2rem
  }
  .sm-handle {
-     padding: 0 1rem;
+     padding: 0rem;
+     margin-top: 2rem;
  }
  .sm-handle .iconify {
-     font-size: 28px;
+     font-size: 20px;
+ }
+ .copyright {
+   margin-top: 3rem;
  }
 }
