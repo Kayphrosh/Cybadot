@@ -507,7 +507,9 @@ li .hiring {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;.processes span p {ercase;
+  line-height: 30px;
+  letter-spacing: 0.005em;
+  text-transform: lowercase;
   margin-top: 1rem;
   text-align: left
 }
