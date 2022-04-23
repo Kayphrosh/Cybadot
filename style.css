@@ -348,10 +348,10 @@ li .hiring {
   display: flex;
   flex-direction: row;
   max-height: 600px;
-  /* background: #E5E5E5; */
   background: #f5faff;
   margin-top: 100px;
   padding: 100px 60px;
+  overflow: hidden;
 }
 .our-vision aside {
   display: flex;
@@ -622,6 +622,7 @@ li .hiring {
   display: flex;
   margin-top: 4rem;
   gap: 2rem;
+  overflow: hidden;
 }
 .contact-information {
   display: flex;
@@ -633,6 +634,7 @@ li .hiring {
   flex-basis: 45%;
   border-radius: 10px;
   color: #fff;
+  overflow: hidden;
 }
 .information-header {
   display: flex;
@@ -656,7 +658,7 @@ li .hiring {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
-
+  overflow: hidden;
 }
 .informations span {
   display: flex;

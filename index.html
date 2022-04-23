@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <title>Cybadot</title>
 </head>
 <body>
     <header>
-        <div class="navbar">
+        <div class="navbar" data-aos="fade-up">
             <nav>
                 <div class="logo">
                     <img src="./image/Cybadot Logo.svg" alt="">
@@ -41,7 +42,7 @@
                     Our Process
                 </button>
             </div>
-            <div class="header-illustration">
+            <div class="header-illustration" data-aos="fade-up">
                 <img src="./image/illustration-2.svg" alt="">
                 <img src="./image/illustration-mobile.svg" alt="">
             </div>
@@ -49,7 +50,8 @@
     </header>
     <section class="cybalife">
         <div class="border-top"></div>
-        <div class='cybalife-content'>
+        <div class='cybalife-content' data-aos="fade-down" data-aos-easing="linear"
+        data-aos-duration="1500">
             <span class="cybalife-illustration">
                 <img src="./image/cybalife-illustration.svg" alt="">
             </span>
@@ -59,7 +61,7 @@
             </span>
         </div>
     </section>
-    <section class="our-vision">
+    <section class="our-vision" data-aos="flip-left">
         <aside>
             <img src="./image/illustration.jpg" alt="">
         </aside>
@@ -82,7 +84,7 @@
         </div>
 
         <div class="technology">
-            <span>
+            <span data-aos="fade-right">
                 <div class="small-ill">
                     <img src="./image/mobile-development.svg" alt="">
                 </div>
@@ -92,7 +94,7 @@
                     deliver Android, IOS, BlackBerry, Windows etc.
                 </p>
             </span>
-            <span>
+            <span data-aos="fade-left">
                 <div class="small-ill">
                     <img src="./image/maintenance.svg" alt="">
                 </div>
@@ -103,7 +105,7 @@
                     good use.
                 </p>
             </span>
-            <span>
+            <span data-aos="fade-right">
                 <div class="small-ill">
                     <img src="./image/seo.svg" alt="">
                 </div>
@@ -113,7 +115,7 @@
                     increase revenue and get a constant stream of new customers. Search engine optimization (SEO)
                 </p>
             </span>
-            <span>
+            <span data-aos="fade-left">
                 <div class="small-ill">
                     <img src="./image/creativity.svg" alt="">
                 </div>
@@ -124,7 +126,7 @@
                     tool.
                 </p>
             </span>
-            <span>
+            <span data-aos="fade-right">
                 <div class="small-ill">
                     <img src="./image/web-setting.svg" alt="">
                 </div>
@@ -145,7 +147,7 @@
                 for real-time schemas. Dramatically maintain solutions.</p>
         </div>
         <div class="processes">
-            <span>
+            <span data-aos="fade-down">
                 <h3>
                     1.
                 </h3>
@@ -158,7 +160,7 @@
                     your thumbs up
                 </p>
             </span>
-            <span>
+            <span data-aos="fade-down">
                 <h3>
                     2.
                 </h3>
@@ -169,7 +171,7 @@
                     After acquiring your recommendations listed. Then advance in our planning phase, we will figure out the software requirements, the scope of our project and deadlines which we will let you know about and discuss in order to make the development process smooth and flexible.
                 </p>
             </span>
-            <span>
+            <span data-aos="fade-down">
                 <h3>
                     3.
                 </h3>
@@ -185,7 +187,7 @@
                     informed about the latest developments.
                 </p>
             </span>
-            <span>
+            <span data-aos="fade-down">
                 <h3>
                     4.
                 </h3>
@@ -209,7 +211,7 @@
                 questions</p>
         </div>
         <div class="contact">
-            <span class="contact-information">
+            <span class="contact-information" data-aos="fade-down">
                 <div class="information-header">
                     <h5>Contact information</h5>
                     <p>Fill up your information and out team will be in contact in less that 24hrs</p>
@@ -236,7 +238,7 @@
                     <span class="iconify" data-icon="iconoir:facebook"></span>
                 </div>
             </span>
-            <span class="contact-input">
+            <span class="contact-input" data-aos="fade-up">
                 <form action="">
                     <span>
                         <div>
@@ -323,4 +325,13 @@
         <small>	&copy; 2022 Cybadot Technologies.</small>
     </div>
 </body>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            animatedClassName: 'aos-animate', 
+            duration: 1000 
+        });
+    </script>
 </html>
