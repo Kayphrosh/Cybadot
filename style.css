@@ -37,6 +37,7 @@ header {
   background: rgba(255, 255, 255, 0.884);
   backdrop-filter: blur(50px);
   z-index: 11111;
+  overflow: hidden;
 }
   .navbar nav {
     display: flex;
@@ -60,6 +61,7 @@ header {
     font-family: 'DM Sans', sans-serif;
     min-width: 450px;
     align-items: center;
+    overflow: hidden;
   }
   .nav-bar a {
     font-style: normal;
@@ -112,6 +114,7 @@ header {
     max-width: 700px;
     margin: auto 0;
     margin-right: 2rem;
+    overflow: hidden;
 }
 
 .header-text h1 {
@@ -177,7 +180,7 @@ li .hiring {
   padding-top: 0rem;
   margin: auto 0;
   margin-left: 2rem;
-
+  overflow: hidden;
 }
 .header-illustration img {
   width: 100%;
@@ -277,10 +280,12 @@ li .hiring {
 .cybalife-content {
   display: flex;
   margin-top: 150px;
+  overflow: hidden;
 }
 .cybalife-illustration{
   flex-basis: 65%;
   margin-right: 4rem;
+  overflow: hidden;
 }
 .cybalife-illustration img {
   width: 100%;
@@ -360,6 +365,7 @@ li .hiring {
   display: flex;
   flex-basis: 50%;
   margin-right: 2rem;
+  overflow: hidden;
 }
 .our-vision aside img{
   width: 100%;
@@ -372,6 +378,7 @@ li .hiring {
   flex-direction: column;
   flex-basis: 50%;
   margin-left: 2rem;
+  overflow: hidden;
 }
 .our-vision main h3 {
   font-family: 'Roboto Mono', monospace;
@@ -425,8 +432,9 @@ li .hiring {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 60px;
-  margin-top: 6rem;
+  padding: 6rem 60px;
+  padding-top: 0rem;
+  overflow: hidden;
 }
 .technologies-header ,
 .process-header,
@@ -546,6 +554,7 @@ li .hiring {
   /* min-height: 500px; */
   background-color: #00061B;
   color: #fff;
+  overflow: hidden;
 }
 .process-header {
   padding: 40px 60px;
@@ -560,6 +569,7 @@ li .hiring {
   justify-content: space-between;
   margin: 2rem 0;
   column-gap: 2rem;
+  overflow: hidden;
 }
 .processes span {
   display: flex;
@@ -622,8 +632,8 @@ li .hiring {
 .contact-us {
   display: flex;
   flex-direction: column;
-  padding: 60px;
-  margin-top: 2rem;
+  padding: 2rem 60px;
+  overflow: hidden;
 }
 
 .contact {
@@ -959,5 +969,6 @@ footer {
  }
  .copyright {
    padding:  0rem 1rem;
+   margin-top: 2rem;
  }
 }
