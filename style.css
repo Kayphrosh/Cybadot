@@ -900,9 +900,9 @@ footer {
  }
  .footer-nav{
    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 2rem;
-    column-gap: 0rem;
+    column-gap: 4rem;
  }
  .footer-about {
      text-align: left;
