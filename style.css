@@ -241,6 +241,7 @@ li .hiring {
   }
   .header-illustration {
     margin-left: 0;
+    margin-top: 2rem;
   }
   .header-illustration img:nth-child(1) {
     display: none;
