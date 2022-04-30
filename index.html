@@ -34,23 +34,25 @@
 </head>
 <body>
     <header>
-        <div class="navbar" data-aos="fade-up">
-            <nav>
+        <nav class="navbar" data-aos="fade-up">
+            <div class="bar">
                 <div class="logo">
                     <img src="./image/Cybadot Logo.svg" alt="">
                 </div>
                 <div class="hamburger" onclick="toggleNav()">
-                    <span class="iconify" data-icon="gg:menu-right"></span>
+                    <span class="iconify"  id="open" data-icon="gg:menu-right"></span>
+                    <span class="iconify"  id="close" data-icon="ci:close-big"></span>
                 </div>
-                <ul class="nav-bar nav-active"">
-                    <li><a href="#"> Home</a></li>
-                    <li><a href="#about"> About Us</a></li>
-                    <li><a href="#technologies">Technologies</a></li>
-                    <li><a href='#soluton'>Solution</a></li>
-                    <li><button onclick="window.location.href = '#contact'" >Contact</button></li>
-                </ul>
-            </nav>
-        </div>  
+            </div>
+            <ul class="nav-bar nav-active">
+                <li><a href="#"> Home</a></li>
+                <li><a href="#about"> About Us</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href='#soluton'>Solution</a></li>
+                <li><button onclick="window.location.href = '#contact'" >Contact</button></li>
+            </ul>
+        </nav>
+    
 
         <div class="header-content">
             <div class="header-text" data-aos="fade-up">
